@@ -19,16 +19,6 @@ def login():
       return render_template("existing.html",name=name)
     elif password not in cheak_in_file.read():
       return render_template("error.html",name=name)
-  if request.method == "POST" and "sms" in request.form and "receiver" in request.form:
-    receiver=request.form.get("receiver")
-    mesage=request.form.get("sms")
-    m = open("message.txt","a+")
-    m.close()
-    m = open("message.txt","a")
-    m.write("\n"+receiver+" ")
-    m.write(mesage)
-    m.close()
-    return render_template("existing.html",name=name)
   return render_template("login.html",name=name)
 
 @app.route("/signup",methods = ["GET","POST"])
