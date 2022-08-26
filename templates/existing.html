@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Arhans existing webpage</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body class="main">
+    <div class="backdrop">
+    <div>
+    <h1>{{name}}'s page</h1>
+    <p>Hello how are you doing {{name}}!</p>
+    </div>
+    <form method="POST" action="/login">
+        <br>
+        <label for="receiver">Your freinds name</label><br>
+        <input type="text" name="receiver" placeholder="Receiver:" required><br>
+        <br>
+        <label for="sms">Message your freind</label><br>
+        <input type="text" name="sms" placeholder="Message:" required><br>
+        <br>
+        <button type="submit" value="submit" style="background-image: linear-gradient(30deg, orange, crimson);">Message</button>
+        {% if message %}
+            <p>You have a message</p>
+            <h4>{{message}}</h4>
+        {% endif %}    
+    </form>
+    </div>
+</body>

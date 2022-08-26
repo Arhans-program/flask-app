@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arhans webpage</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+</head>
+<body>
+    <div class="wavebackground">
+        <form method="POST" action="/signup" class="text_center">
+            <button style="background-image: linear-gradient(30deg, orange, crimson);"><a href="{{url_for('signup')}}" style="text-decoration: none; color: black;">Create an account</a></button>
+            <button style="background-image: linear-gradient(30deg, orange, crimson);"><a href="{{url_for('login')}}" style="text-decoration: none; color: black;">Have an acount</a></button><br>
+            <br>
+            <label for="create_username" class="text">Create your username:</label><br>
+             <br>
+            <input type="text" name="create_username" placeholder="Name:" required><br>
+             <br>
+            <label for="create_password" class="text">Create your password:</label><br>
+             <br>
+            <input type="password" name="create_password" placeholder="password:" required><br>
+             <br>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+        </div>
+</body>
+</html>
