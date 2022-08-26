@@ -13,12 +13,12 @@ def login():
     try:
       cheak_in_file = open(name+".txt","r")
     except FileNotFoundError:
-      return render_template("main.html",name=name)
+      return render_template("error.html",name=name)
     if password in cheak_in_file.read():
       cheak_in_file.close()
       return render_template("existing.html",name=name)
     elif password not in cheak_in_file.read():
-      return render_template("main.html",name=name)
+      return render_template("error.html",name=name)
   if request.method == "POST" and "sms" in request.form and "receiver" in request.form:
     receiver=request.form.get("receiver")
     mesage=request.form.get("sms")
