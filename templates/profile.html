@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="backdrop">
+        <form method="POST" action="/profile">
+            <div class="top-bar">
+            <a style="text-decoration: none; color: black;" href="/profile"><button type="button" style="width: 100px;">Profile</button></a>
+            <a style="text-decoration: none; color: black;" href="/logout"><button type="button" style="width: 100px;">log out</button></a>
+            <a style="text-decoration: none; color: black;" href="/existing"><button type="button" style="width: 100px;">Home</button></a>
+            <h1 style="padding-left: 60vw;">{{name}}'s page</h1>
+            </div>
+        </form>
+        <br>
+        <br>
+        <h2>Username:{{name}}</h2>
+        <h2>Password:{{password}}</h2>
+    </div>
+</body>
+</html>
