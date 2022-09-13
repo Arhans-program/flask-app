@@ -64,3 +64,10 @@ input{
     background-color: darkgray;
     height: 70px;
 }
+.m{
+    border:solid white 2px;
+    padding: 10px;
+    width:450px;
+    background-color: black;
+    border-radius: 5px;
+}
