@@ -1,0 +1,72 @@
+h1{
+    font-family: sans-serif;
+    color: black;
+    padding: 1vh;
+    display: inline-block;
+}
+.main{
+    font-family: sans-serif;
+    color: rgb(134, 255, 198);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    margin: 2vh 0.5vh;
+    padding: 1vh;
+    border-radius: 100px;
+    border: none;
+    width: 22vh;
+    background-color: rgb(84, 155, 255);
+}
+button:hover{
+    background-color:rgb(134, 255, 198);
+}
+input{
+    width: 30vh;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: rgb(134, 255, 198);
+    overflow:auto;
+    border: none;
+}
+.text{
+    font-family: sans-serif;
+    font-size: x-large;
+    color:rgb(134, 255, 198 170, 255, 215);
+    ;
+}
+.text_center{
+    padding:10vh;
+    padding-left: 45vh;
+}
+.backdrop{
+    background-color:lightsalmon ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgb(134, 255, 198);
+}
+.top-bar{
+    background-color: rgb(84, 155, 255);
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100vw;
+}
+.top-bar:hover{
+    background-color: rgb(134, 255, 198) ;
+    height: 70px;
+}
+.m{
+    padding: 10px ;
+    border-radius: 5px;
+    background-color: rgb(84, 155, 255);
+    height: auto;
+    max-height: 40vh;
+    width: 20vw;
+    overflow-y: auto;
+    overflow-x: auto;
+}
