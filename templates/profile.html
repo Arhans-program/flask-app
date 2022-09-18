@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="backdrop">
+        <form method="POST" action="/profile">
+            <div class="top-bar">
+            <a style="text-decoration: none;" href="/profile"><button type="button" style="width: 100px; background-color: lightsalmon;">Profile</button></a>
+            <a style="text-decoration: none;" href="/logout"><button type="button" style="width: 100px; background-color: lightsalmon;">log out</button></a>
+            <a style="text-decoration: none;" href="/existing"><button type="button" style="width: 100px; background-color: lightsalmon;">Home</button></a>
+            <h1 style="padding-left: 50vw;">{{name}}'s page</h1>
+            </div>
+        </form>
+        <form method="POST" action="/profile">
+            <br>
+            <br>
+            <h2 style="color: black;">Username:{{name}}</h2>
+            <h2 style="color: black;">Password:{{password}}</h2>
+            <br>
+            <label for="cp">Change your password:</label><br>
+            <br>
+            <input type="text" name="cp" placeholder="Change password:"><br>
+            <br>
+            <button type="submit" value="submit">Change</button>
+        </form>
+    </div>
+</body>
+</html>

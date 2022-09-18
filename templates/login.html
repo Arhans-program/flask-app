@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="text_center">
+            <a href="/signup" style="text-decoration: none; color: white;"><button>Create an account</button></a>
+            <a href="/login" style="text-decoration: none; color: white;"><button>Have an acount</button></a><br>
+            <form method="POST" action="/login">
+                <br>
+                <label for="username" class="text">Enter your username:</label><br>
+                <br>
+                <input type="text" name="username" placeholder="Name:" maxlength="10" style="user-select: none;" required><br>
+                <br>
+                <label for="password" class="text">Enter your password:</label><br>
+                <br>
+                <input type="password" name="password" placeholder="password:" maxlength="8" minlength="6" required><br>
+                <br>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>

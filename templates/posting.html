@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>posting</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="top-bar">
+            <a style="text-decoration: none;" href="/profile"><button type="button" style="width: 100px; background-color: lightsalmon;">Profile</button></a>
+            <a style="text-decoration: none;" href="/existing"><button type="button" style="width: 100px; background-color: lightsalmon;">Home</button></a>
+            <h1 style="padding-left: 50vw;">{{name}}'s page</h1>
+        </div>
+        <br><br>
+        <form action="/posting" method="post" style="padding: 20px;">
+            <div style="display:flex; flex-direction:row; padding: 10px; height: fit-content; background-color: rgb(134, 255, 198);  width: fit-content; border-radius: 10px;">
+                <input style="border: none; background:none;" type="text" name="poster" placeholder="Post publicly" maxlength="100" minlength="1">
+                <button style="padding: left 2px; padding-right: 10px; margin: 0; width: fit-content;" type="submit" value="submit">📨</button>    
+                <br>
+            </div>
+            <br>
+            <div class="m" style="width:20vw;">
+                <ul>
+                    {% for message in messages %}
+                        <li style="display:block ;">{{ message[0] + ": " + (message[1] or "")}}</li><br>
+                    {% endfor %}
+                </ul>
+            </div>
+        </form>
+    </div>   
+</body>
+</html>

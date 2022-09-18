@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+</head>
+<body>
+    <div class="backdrop">
+        <div class="text_center">
+            <a href="/signup" style="text-decoration: none; color: black;"><button>Create an account</button></a>
+            <a href="/login" style="text-decoration: none; color: black;"><button>Have an acount</button></a><br>
+            <form method="POST" action="/signup">
+                <br>
+                <label for="create_username" class="text">Create your username:</label><br>
+                <br>
+                <input type="text" name="create_username" placeholder="Name:" maxlength="10" required><br>
+                <br>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <br>
+                <label for="create_password" class="text">Create your password:</label><br>
+                <br>
+                <input type="password" name="create_password" placeholder="password:" maxlength="8" minlength="6" required><br>
+                <br>
+                <button type="submit" value="submit">submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
